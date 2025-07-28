@@ -5,7 +5,7 @@
                 
                 <div class="flex-shrink-0 flex items-center mt-1">
                     <a href="{{ url('/') }}">
-                        <img src="{{ asset('img/joracle-logo.png') }}" alt="Joracle Logo" class="h-28 py-2">
+                        <img src="{{ asset('img/joracle-logo.png') }}" alt="Joracle Logo" class="h-24 py-2">
                     </a>
                 </div>    
 
@@ -21,12 +21,6 @@
                         <a href="{{ route('dashboard') }}" class="bg-gradient-to-r from-[#F4511E] to-[#FF7043] text-white px-5 py-2.5 rounded-lg text-sm font-medium shadow-sm transform transition duration-300 hover:shadow-md hover:from-[#E53935] hover:to-[#F4511E]">
                             Dashboard
                         </a>
-                        <form method="POST" action="{{ route('logout') }}">
-                            @csrf
-                            <button type="submit" class="text-gray-600 font-medium px-4 py-2.5 rounded-md text-sm transition duration-300 hover:bg-red-50 border border-[#C62828] hover:text-[#E53935]">
-                                Déconnexion
-                            </button>
-                        </form>
                     @endguest
                 </div>
 

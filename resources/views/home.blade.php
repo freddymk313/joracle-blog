@@ -106,22 +106,6 @@
         </div>
     </main>
 
-    {{-- Newsletter Section --}}
-    <!-- <section class="bg-gradient-to-r from-[#F4511E] to-[#E53935] py-16 mt-16">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
-            <h2 class="text-3xl font-bold mb-4">Restez connectés</h2>
-            <p class="text-lg mb-8 max-w-2xl mx-auto">
-                Abonnez-vous à notre newsletter pour recevoir les derniers articles et actualités directement dans votre boîte mail.
-            </p>
-            <form class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-                <input type="email" placeholder="Votre adresse email" class="flex-grow px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C62828] text-gray-800">
-                <button type="submit" class="bg-[#C62828] hover:bg-[#8E0E00] text-white px-6 py-3 rounded-lg font-medium shadow-lg transform transition duration-300 hover:scale-105">
-                    S'abonner
-                </button>
-            </form>
-        </div>
-    </section> -->
-
     {{-- Footer --}}
     <x-footer />
 
