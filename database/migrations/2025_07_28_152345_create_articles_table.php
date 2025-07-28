@@ -11,16 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        // Schema::create('articles', function (Blueprint $table) {
-        //     $table->id();
-        //     $table->timestamps();
-        // });
         Schema::create('articles', function (Blueprint $table) {
             $table->id();
             $table->string('title');
             $table->text('content');
+            $table->string('description')->nullable();
             $table->string('image')->nullable();
-            $table->foreignId('category_id')->constrained()->onDelete('cascade');
+            $table->string('category')->nullable();
             $table->timestamps();
         });
     }

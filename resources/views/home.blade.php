@@ -54,27 +54,27 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            @for ($i = 1; $i <= 6; $i++)
+            @forelse ($articles as $article)
             <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-500 transform hover:-translate-y-2">
                 <div class="relative">
-                    <img src="{{ asset('img/blog.png') }}" alt="Article" class="w-full h-56 object-cover">
+                    <img src="{{ $article->image ? asset('storage/' . $article->image) : asset('img/blog.png') }}" alt="Article" class="w-full h-56 object-cover">
                     <div class="absolute top-4 right-4 bg-[#F4511E] text-white text-xs font-bold px-3 py-1 rounded-full">
-                        Spiritualité
+                        {{ $article->category }}
                     </div>
                 </div>
                 <div class="p-6">
                     <div class="flex items-center text-sm text-gray-500 mb-3">
                         <i class="far fa-calendar-alt mr-2 text-[#E53935]"></i>
-                        <span>15 juin 2023</span>
+                        <span>{{ $article->created_at->format('d M Y') }}</span>
                         <span class="mx-2">•</span>
                         <i class="far fa-clock mr-2 text-[#E53935]"></i>
                         <span>5 min lecture</span>
                     </div>
                     <h3 class="text-xl font-bold mb-3 text-gray-800 hover:text-[#E53935] transition duration-300">
-                        <a href="#">Titre de l'article inspirant {{ $i }}</a>
+                        <a href="#">{{ $article->title }}</a>
                     </h3>
                     <p class="text-gray-600 mb-4 leading-relaxed">
-                        Ceci est un aperçu du contenu de l'article qui apporte lumière et réconfort à travers les enseignements bibliques...
+                        {{ $article->description }}
                     </p>
                     <div class="flex justify-between items-center">
                         <a href="#" class="text-[#E53935] font-medium hover:underline flex items-center">
@@ -88,10 +88,12 @@
                     </div>
                 </div>
             </div>
-            @endfor
+            @empty
+            <p class="text-center text-gray-600 col-span-3">Aucun article pour le moment.</p>
+            @endforelse
         </div>
 
-        <div class="mt-16 flex justify-center">
+        <!-- <div class="mt-16 flex justify-center">
             <nav class="flex items-center space-x-2">
                 <a href="#" class="px-4 py-2 border border-gray-300 rounded-lg text-gray-600 hover:bg-[#E53935] hover:text-white transition duration-300">
                     <i class="fas fa-chevron-left"></i>
@@ -103,8 +105,11 @@
                     <i class="fas fa-chevron-right"></i>
                 </a>
             </nav>
+        </div> -->
+        <div class="mt-16 flex justify-center">
+            {{ $articles->links() }}
         </div>
-    </main>
+</main>
 
     {{-- Footer --}}
     <x-footer />

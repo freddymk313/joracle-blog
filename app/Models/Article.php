@@ -6,8 +6,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Article extends Model
 {
-    //
-    public function articles() {
-        return $this->hasMany(Article::class);
-    }
+
+    protected $fillable = [
+        'title',
+        'description',
+        'content',
+        'image',
+        'category',
+    ];
 }
