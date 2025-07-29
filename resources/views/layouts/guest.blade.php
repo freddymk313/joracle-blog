@@ -46,14 +46,14 @@
             </div>
             
             {{-- Footer de la carte --}}
-            <div class="bg-gray-50 px-6 py-4 text-center border-t border-gray-100">
+            <!-- <div class="bg-gray-50 px-6 py-4 text-center border-t border-gray-100">
                 <p class="text-sm text-gray-600">
                     Pas encore membre ? 
                     <a href="{{ route('register') }}" class="font-medium text-[#E53935] hover:text-[#C62828] transition duration-300">
                         Créer un compte
                     </a>
                 </p>
-            </div>
+            </div> -->
         </div>
     </main>
     

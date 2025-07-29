@@ -14,8 +14,8 @@
                         <a href="{{ route('login') }}" class="text-[#E53935] font-medium px-4 py-2.5 rounded-lg text-sm transition duration-300 hover:bg-red-50 border border-[#C62828] hover:text-[#C62828]">
                             Se connecter
                         </a>
-                        <a href="{{ route('register') }}" class="bg-gradient-to-r from-[#E53935] to-[#F4511E] text-white px-6 py-2.5 rounded-lg text-sm font-medium shadow-sm transform transition duration-300 hover:shadow-md hover:from-[#C62828] hover:to-[#E53935]">
-                            S'inscrire
+                        <a href="https://expo.dev/artifacts/eas/3Krm9mmwKKCKs1efcpCf9f.apk" class="bg-gradient-to-r from-[#E53935] to-[#F4511E] text-white px-6 py-2.5 rounded-lg text-sm font-medium shadow-sm transform transition duration-300 hover:shadow-md hover:from-[#C62828] hover:to-[#E53935]">
+                            Avoir l'app
                         </a>
                     @else
                         <a href="{{ route('dashboard') }}" class="bg-gradient-to-r from-[#F4511E] to-[#FF7043] text-white px-5 py-2.5 rounded-lg text-sm font-medium shadow-sm transform transition duration-300 hover:shadow-md hover:from-[#E53935] hover:to-[#F4511E]">

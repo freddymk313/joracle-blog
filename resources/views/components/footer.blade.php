@@ -1,5 +1,4 @@
 <footer class="bg-gradient-to-b from-[#C62828] to-[#8E0E00] text-white shadow-2xl mt-24">
-    <!-- Wave Divider -->
     <div class="wave-divider rotate-180">
         <svg viewBox="0 0 1200 120" preserveAspectRatio="none" class="w-full h-16">
             <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" fill="#C62828"></path>
@@ -9,11 +8,10 @@
     </div>
 
     <div class="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-4 gap-10">
-        <!-- Logo et description -->
+        <!-- Logo -->
         <div class="space-y-6">
             <div class="">
                 <img src="{{ asset('img/joracle-logo-white.png') }}" alt="Joracle Logo" class="h-32 drop-shadow-lg">
-                <!-- <span class="text-2xl font-bold text-white">Joracle Community</span> -->
             </div>
             <p class="text-sm leading-relaxed text-gray-100">
                 Proclamant la bonne nouvelle du salut en Jésus-Christ et formant des disciples enracinés dans la Parole de Dieu.
@@ -42,7 +40,6 @@
             </div>
         </div>
 
-        <!-- Navigation rapide -->
         <div>
             <h3 class="text-xl font-bold text-white mb-6 uppercase tracking-wider border-b-2 border-[#F4511E] pb-2 inline-block">Navigation</h3>
             <ul class="space-y-4">
@@ -124,7 +121,7 @@
     </div>
 
     <!-- Copyright -->
-    <div class="bg-[#5A0A00] py-6">
+    <div class="bg-[#C62828] py-6">
         <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
             <p class="text-sm text-gray-300 text-center md:text-left mb-3 md:mb-0">
                 &copy; {{ date('Y') }} Joracle Community. Tous droits réservés.

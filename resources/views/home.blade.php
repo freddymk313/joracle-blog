@@ -93,19 +93,6 @@
             @endforelse
         </div>
 
-        <!-- <div class="mt-16 flex justify-center">
-            <nav class="flex items-center space-x-2">
-                <a href="#" class="px-4 py-2 border border-gray-300 rounded-lg text-gray-600 hover:bg-[#E53935] hover:text-white transition duration-300">
-                    <i class="fas fa-chevron-left"></i>
-                </a>
-                <a href="#" class="px-4 py-2 bg-[#E53935] text-white rounded-lg">1</a>
-                <a href="#" class="px-4 py-2 border border-gray-300 rounded-lg text-gray-600 hover:bg-[#E53935] hover:text-white transition duration-300">2</a>
-                <a href="#" class="px-4 py-2 border border-gray-300 rounded-lg text-gray-600 hover:bg-[#E53935] hover:text-white transition duration-300">3</a>
-                <a href="#" class="px-4 py-2 border border-gray-300 rounded-lg text-gray-600 hover:bg-[#E53935] hover:text-white transition duration-300">
-                    <i class="fas fa-chevron-right"></i>
-                </a>
-            </nav>
-        </div> -->
         <div class="mt-16 flex justify-center">
             {{ $articles->links() }}
         </div>
